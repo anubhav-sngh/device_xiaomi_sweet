@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common PixelExperience stuff
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
@@ -25,3 +27,6 @@ PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Buipd type
+CUSTOM_BUILD_TYPE := Custom
